@@ -1,7 +1,9 @@
 # %%
+from __future__ import annotations
+
 from tabulate import tabulate
 import datetime
-from food_database import *
+from mealplanner.src.food_database import *
 import numpy as np
 
 
@@ -32,7 +34,9 @@ data = [
     ('14-18', 450, '', '', '', '', '', '', ''),
     ('18-20', 600, '', '', '', '', '', '', ''),
     ('20-22', 600, '', '', '', '', '', '', ''),
-    ('Snacks', 300, '', '', '', '', '', '', '')]
+    ('Snacks', 300, '', '', '', '', '', '', ''),
+('Total', 300, '', '', '', '', '', '', ''), ]
+
 
 numeric_values = [int(row[1]) for row in data[1:]]
 total_sum = np.sum(numeric_values)
