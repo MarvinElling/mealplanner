@@ -31,6 +31,12 @@ quinoa_bowl = Dish('Apfel-Quinoa-Mandel-Bowl',
                     ],
                     'https://www.ndr.de/ratgeber/kochen/rezepte/Apfel-Quinoa-Mandel-Bowl,rezept2892.html')
 
+reis1 = Dish('Reis1',
+             [('reis', 150),
+              ('hirtenkase', 100)])
+
+schoko = Dish('Schoko',
+              [('schokolade_90', 25)])
 
 shake1 = Dish('Shake1',
               [('haferdrink_gutbio', 300),
@@ -39,6 +45,12 @@ shake1 = Dish('Shake1',
                ('honig', 7.5),
                ('haferflocken', 20)],
             )
+
+spagh_carb = Dish('Spaghetti Carbonara',
+                  [('spaghetti', 150),
+                   ('margarine_rama', 25),
+                   ('parmesan', 25)])
+
 
 
 

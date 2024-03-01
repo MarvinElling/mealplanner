@@ -8,20 +8,31 @@ food_100 = {
     'brot' : 120,
 
     'haferflocken': 360,
+    'hirtenkase': 250,
     'honig': 300,
+
     'kartoffel': 70,
 
     'mandeln': 576,
     'margarine_rama': 530,
     'marmelade_erdbeer': 150,
     'musli_basis5_kornmix': 361,
+    'musli_lidl': 400,
 
     'nuss_hasel': 628,
+
     'obstriegel': 96,
+
+    'parmesan': 250,
+
     'quinoa': 366,
+
     'reis' : 350,
+
     'schokolade_90': 605,
+    'spaghetti': 350,
     'speisequark40' : 139,
+
     'tellerlinsen': 300,
 
     'milch': 64,

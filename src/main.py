@@ -32,13 +32,22 @@ data = [
     #('08-10', 400, Dish('Reis', [('reis', 10)]), 0, 0, 0, 0, 0, 0),
     ('08-10', 400, apfel, apfel, apfel, apfel, apfel, apfel, apfel),
     ('10-12', 300, 0, 0, 0, 0, 0, quark_musli, 0),  # noqa: F405
-    ('12-14', 750, 0, 0, 0, 0, 0, 0, quinoa_bowl),
+    ('12-14', 750, reis1, reis1, reis1, spagh_carb, spagh_carb, quinoa_bowl, quinoa_bowl),
     ('14-18', 450, brote3, brote3, brote3, brote3, brote3, brote3, 0),
     ('18-20', 600, 0, 0, 0, 0, 0, 0, 0),
-    ('20-22', 600, shake1, shake1, shake1, shake1, shake1, shake1, shake1),
+    ('20-22', 600, shake1, shake1, shake1, shake1, shake1, shake1, shake1), 
+    ('Snacks', 300, [obstriegel, banane], [obstriegel, banane, schoko], [obstriegel, banane], [obstriegel, banane], [obstriegel, banane, schoko], banane, banane),
+]
+data2 = [
+    #('08-10', 400, Dish('Reis', [('reis', 10)]), 0, 0, 0, 0, 0, 0),
+    ('08-10', 400, apfel, apfel, apfel, apfel, apfel, apfel, apfel),
+    ('10-12', 300, 0, 0, 0, 0, 0, quark_musli, 0),  # noqa: F405
+    ('12-14', 750, 0, 0, 0, 0, 0, 0, 0),
+    ('14-18', 450, brote3, brote3, brote3, brote3, brote3, brote3, 0),
+    ('18-20', 600, 0, 0, 0, 0, 0, 0, 0),
+    ('20-22', 600, shake1, shake1, shake1, shake1, shake1, shake1, shake1), 
     ('Snacks', 300, [obstriegel, banane], [obstriegel, banane], [obstriegel, banane], [obstriegel, banane], [obstriegel, banane], banane, banane),
 ]
-
 
 def calc_total(d):
     a = ['Total', '', '', '', '', '', '', '', '']
@@ -59,6 +68,8 @@ def calc_total(d):
 
 a = calc_total(data)
 data.append(a)
+a = calc_total(data2)
+data2.append(a)
 
 
 # print(tabulate(data, headers=headers, tablefmt="fancy_grid"))
@@ -76,5 +87,17 @@ for row in data:
             formatted_row.append(col)
     formatted_data.append(formatted_row)
 
+formatted_data2 = []
+for row in data2:
+    formatted_row = []
+    for col in row:
+        if isinstance(col, list) and all(isinstance(item, Dish) for item in col):
+            formatted_row.append(format_dishes(col))
+        else:
+            formatted_row.append(col)
+    formatted_data2.append(formatted_row)
+
 # Print the tabulated data
 print(tabulate(formatted_data, headers=headers, tablefmt="fancy_grid"))
+# print(tabulate(formatted_data2, headers=headers, tablefmt="fancy_grid"))
+
