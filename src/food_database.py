@@ -80,9 +80,3 @@ class Dish:
         """Calculate other + self."""
         if isinstance(other, (float, int)):
             return other + self.calories        
-
-
-
-# pasta = Dish('holy', [('reis', 100)])
-# print(pasta + 300)
-# print(300 + pasta)
