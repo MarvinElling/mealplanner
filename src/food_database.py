@@ -3,15 +3,21 @@ from __future__ import annotations
 
 food_100 = {
     'apfel': 50,
+
     'banane' : 100,
     'berglinsen' : 350,
     'brot' : 120,
+
+    'ei': 80,
 
     'haferflocken': 360,
     'hirtenkase': 250,
     'honig': 300,
 
     'kartoffel': 70,
+    'kase_tilsiter': 120,
+
+    'lachs_raucher': 200,
 
     'mandeln': 576,
     'margarine_rama': 530,
@@ -28,12 +34,15 @@ food_100 = {
     'quinoa': 366,
 
     'reis' : 350,
+    'reiswaffel_piece': 25,
 
+    'sahnejoghurt_milsani': 150,
     'schokolade_90': 605,
     'spaghetti': 350,
     'speisequark40' : 139,
 
     'tellerlinsen': 300,
+    'toast': 90,
 
     'milch': 64,
     'haferdrink_gutbio' : 42,

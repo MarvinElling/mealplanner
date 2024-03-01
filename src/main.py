@@ -30,17 +30,17 @@ headers = [
 brote3 = [brot, brot, brot]
 data = [
     #('08-10', 400, Dish('Reis', [('reis', 10)]), 0, 0, 0, 0, 0, 0),
-    ('08-10', 400, apfel, apfel, apfel, apfel, apfel, apfel, apfel),
-    ('10-12', 300, 0, 0, 0, 0, 0, quark_musli, 0),  # noqa: F405
+    ('08-10', 400, [apfel, toast], [apfel, musli_morning], [apfel, sahnejoghurt], [apfel, toast], [apfel, sahnejoghurt], [apfel, toast, toast], [apfel, musli_morning]),
+    ('10-12', 300, [ei,ei], 0, [ei], [ei, quark_musli], 0, quark_musli, [ei,ei]),  # noqa: F405
     ('12-14', 750, reis1, reis1, reis1, spagh_carb, spagh_carb, quinoa_bowl, quinoa_bowl),
-    ('14-18', 450, brote3, brote3, brote3, brote3, brote3, brote3, 0),
-    ('18-20', 600, 0, 0, 0, 0, 0, 0, 0),
+    ('14-18', 450, brote3, brote3, brote3, brote3, brote3, brote3, [reiswaffel3]),
+    ('18-20', 600, [reiswaffel3, banane], 0, [toast_kase, toast_kase], milch, [milch, lachs_reiswaffel], milch, [toast_kase, toast_kase]),
     ('20-22', 600, shake1, shake1, shake1, shake1, shake1, shake1, shake1), 
     ('Snacks', 300, [obstriegel, banane], [obstriegel, banane, schoko], [obstriegel, banane], [obstriegel, banane], [obstriegel, banane, schoko], banane, banane),
 ]
 data2 = [
     #('08-10', 400, Dish('Reis', [('reis', 10)]), 0, 0, 0, 0, 0, 0),
-    ('08-10', 400, apfel, apfel, apfel, apfel, apfel, apfel, apfel),
+    ('08-10', 400, [apfel], apfel, apfel, apfel, apfel, apfel, apfel),
     ('10-12', 300, 0, 0, 0, 0, 0, quark_musli, 0),  # noqa: F405
     ('12-14', 750, 0, 0, 0, 0, 0, 0, 0),
     ('14-18', 450, brote3, brote3, brote3, brote3, brote3, brote3, 0),
