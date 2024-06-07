@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from tabulate import tabulate
 import datetime
-from mealplanner.src.food_database import *
-from mealplanner.src.recipies import *
+from food_database import *
+from recipies import *
 import numpy as np
 
 

@@ -1,5 +1,5 @@
 # %%
-from mealplanner.src.food_database import Dish
+from food_database import Dish
 
 apfel = Dish('Apfel',
              [('apfel', 100)])
